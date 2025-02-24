@@ -3,6 +3,7 @@ import Image from "next/image";
 import {Geist, Geist_Mono} from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import {Header} from "@/components/Header/Header";
+import {getLayout} from "@/components/Layout/BaseLayout/BaseLayout";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -117,3 +118,5 @@ export default function Home() {
         </>
     );
 }
+
+// Home.getLayout = getLayout
